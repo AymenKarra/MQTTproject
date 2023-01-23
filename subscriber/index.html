@@ -88,7 +88,7 @@
         tempChart.update();
       }
       
-      // Get temperature data from an API or sensor
+      // Get temperature data from the sensor
       setInterval(function(){
           //get temp from sensor
           $.getJSON('http://127.0.0.1:3000/temp',     
@@ -110,7 +110,6 @@
           document.getElementById("temp").innerHTML = temp;
           addData(temp);
       }, 2000);
-      // Add code here to update the chart with new temperature data in real time
     </script>
   </body>
 </html>
